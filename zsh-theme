@@ -13,7 +13,7 @@ PROMPT='\
 @%{$fg[blue]%}%m%{$reset_color%} \
 %{$reset_color%}❯❯ '
 
-RPROMPT='%F{81}%/ \
+RPROMPT='%F{81}%/%f \
 $(git_prompt_info)\
 %{$reset_color%}'
 
