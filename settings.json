@@ -86,6 +86,8 @@
         { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" },
 
         { "command": "newTab", "keys": "ctrl+t" },
-        { "command": "closePane", "keys": "ctrl+w"}
+        { "command": "closePane", "keys": "ctrl+w"},
+        { "command": "splitPane", "keys": "ctrl+alt+numpad_plus" },
+        { "command": "closePane", "keys": "ctrl+alt+numpad_minus" }
     ]
 }
