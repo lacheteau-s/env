@@ -1,14 +1,17 @@
-echo "UPDATING..."
+REPO_DIR=pwd
+
 sudo apt-get update && sudo apt upgrade -y
 
-echo "INSTALLING ZSH..."
+cd $HOME
+# locate Documents folder to make the following command dynamic
+ln -s /mnt/d/Libraries/Documents Documents
+
 sudo apt install zsh
 
-echo "INSTALLING OH-MY-ZSH"
 sudo apt-get install powerline fonts-powerline
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo "COPYING ZSH CONFIG..."
+cd $REPO_DIR
 cp zsh-theme $ZSH/themes/sulli.zsh-theme
 mv ~/.zshrc ~/.zshrc.default
 cp .zshrc ~/.zshrc
